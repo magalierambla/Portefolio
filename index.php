@@ -1,3 +1,14 @@
+<?php
+
+$to = 'rambla.magalie@gmail.com'; // Add your email address in between the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_address="test@yopmail.com";
+$email_subject = "topic-test";
+$email_body = "You have received a new message from your website contact form.\n\n";
+$headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers .= "Reply-To: $email_address";   
+mail($to,$email_subject,$email_body,$headers);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
